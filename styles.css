@@ -1,0 +1,513 @@
+/* Changing bgcolor and no overflow */
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: rgb(7, 6, 6);
+    height: 100vh;
+    width: 270px;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    box-shadow: 0px 0px 3px 3px rgb(167, 164, 164);
+}
+/* Applying no styles to list values */
+.sidebar li {
+    list-style: none;
+}
+
+/* Styling hyperlinks */
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 50px;
+    justify-content: center;
+}
+
+/* styling on hover */
+.sidebar #sidebar-options a:hover {
+    background-color: rgb(70, 68, 68);
+}
+
+
+
+/* Main Body */
+#mainBody {
+    position: fixed;
+    right: 0px;
+    width: 1097px;
+    height: 100vh;
+    padding: 60px;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow-y: auto;
+}
+
+/* All h2s are white */
+h2 {
+    color: white !important;
+}
+
+/* Design Name */
+.designname {
+    font-size: 170px;
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* applying text colours to app name */
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+/* Net Income */
+#netIncome {
+    margin-top: 100px;
+    width: 400px;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+/* Add Transaction Button */
+#addTrans {
+    width: 175px;
+    height: 75px;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    box-shadow: 1px 1px 3px 3px;
+    background-color: green;
+    color: white;
+    border-radius: 30px;
+    position: fixed;
+    bottom: 50px;
+    left: 40px;
+}
+
+#addTrans:hover {
+    background-color: red;
+    color: black;
+}
+
+/* Transaction Form */
+#transactform {
+    background-color: black;
+    width: 600px;
+    height: auto;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid black;
+    outline: 0;
+    box-shadow: 2px 2px 2px 8px rgb(43, 42, 42);
+    border-radius: 30px;
+    position: relative;
+    left: 200px;
+    padding: 20px;
+}
+
+#transactform label {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Styling amount input box */
+#amtbox {
+    height: 50px;
+    width: 90%;
+    font-size: 25px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid black;
+    outline: 0;
+    border-radius: 10px;
+    color: black;
+}
+
+/* Styling transaction desc input box */
+#transdesc {
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+/* Styling the adding button in the form */
+#newtrans {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 20px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Transaction type dropdown menu */
+#transType {
+    width: 90%;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+option {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* All Tables */
+#exptable,
+#alltranstable,
+#inctable {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    background-color: aliceblue;
+    color: black;
+}
+
+#exptable th,
+#alltranstable th,
+#inctable th {
+    width: 20%;
+    background-color: aquamarine;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+#exptable td {
+    color: red;
+    font-size: 17px;
+}
+
+#inctable td {
+    color: green;
+}
+
+#exptable td,
+#alltranstable td,
+#inctable td {
+    width: 25%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+#exptable tr,
+#alltranstable tr,
+#inctable tr {
+    height: fit-content;
+}
+
+.newrow {
+    color: black;
+}
+
+/* Table Headings */
+.tableheadings th {
+    width: 250px;
+    background-color: aquamarine;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.balance-color {
+    color: black !important;
+}
+
+/* Delete Button */
+.delbtn {
+    background-color: red;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Breakdown Table */
+#brkdwntable {
+    border: 2px solid white;
+    color: white;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 250px;
+    height: auto;
+}
+
+#brkdwntable tr {
+    border-bottom: 2px solid white;
+}
+
+#brkdwnpage {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+/* About Page */
+.about-page {
+    max-width: 700px;
+    margin: auto;
+    padding: 2rem;
+    font-family: sans-serif;
+    line-height: 1.6;
+    color: white;
+}
+
+.about-blkqot {
+    padding: 1rem;
+    border-left: 4px solid #00bcd4;
+    margin: 1rem 0;
+    background-color: grey;
+    color: black;
+}
+
+/* Support Page */
+.support-container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fdfdfd;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.support-container h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.support-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.h2-about {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Page Navigation */
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+/* Reset Button */
+#reset {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px grey;
+    width: 60px;
+    height: 40px;
+}
+
+/* Income/Expense Indicators */
+.negative {
+    color: red;
+}
+
+.positive {
+    color: green;
+}
+
+/* Breakdown Section Table */
+#breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#breakdown th,
+#breakdown td {
+    padding: 10px;
+    text-align: left;
+}
+
+#breakdown th {
+    background-color: #f2f2f2;
+}
+
+#hamburger {
+    color: white;
+    background-color: transparent;
+    display: none;
+    border: 0px;
+    outline: 0px;
+}
+
+/* media functions for responsiveness */
+@media(min-width:1200) {
+    #addTrans {
+        position: static;
+
+    }
+}
+
+@media(max-width:1200px) {
+    /* Making the mainbody section fit the screen */
+    #mainBody {
+        width: 100vw;
+        padding: 5px;
+        overflow-wrap: break-word;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+
+
+    #description {
+        width: 100vw;
+        padding: 0px;
+        margin-top: 60px;
+    }
+
+    #description h2,
+    p {
+        font-size: 20px;
+    }
+
+    .designname {
+        font-size: 130px !important;
+    }
+
+    .sidebar {
+        left: -270px;
+        transition: left 0.4s ease;
+        z-index: 11;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    #hamburger {
+        display: block;
+        position: relative;
+        top: 30px;
+        left: 0px;
+        transition: left 0.8 ease;
+        font-size: 25px;
+    }
+
+    #hamburger.active {
+        left: 270px;
+    }
+
+    #transactform {
+        width: 90vw;
+        height: auto;
+        font-size: 30px;
+        position: fixed;
+        left: 50%;
+        top: 90px;
+        transform: translate(-50%);
+    }
+
+    #transType {
+        width: auto;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    option {
+        font-size: 12px;
+    }
+
+    #amtbox {
+        width: 90%;
+    }
+
+    #transdesc {
+        width: 90%;
+        height: 60px;
+    }
+
+    #transactform input {
+        margin: 10px;
+    }
+
+    table {
+        width: 90%;
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    #alltranspage,
+    #exppage,
+    #incpage,
+    #brkdwnpage,
+    #aboutpage,
+    #supportpage {
+        margin-top: 40px;
+    }
+
+    #supportpage {
+        padding: 5px;
+    }
+
+    #alltranspage h2,
+    #exppage h2,
+    #incpage h2 {
+        text-align: center;
+        ;
+    }
+
+    #exptable td,
+    #alltranstable td,
+    #inctable td {
+        text-align: center;
+        border: 2px solid black;
+        font-size: 10px;
+    }
+
+    .delbtn {
+        font-size: 10px;
+    }
+
+    #reset {
+        font-size: 10px;
+    }
+
+    .hidden{
+        display:none;
+    }
+
+}
+
